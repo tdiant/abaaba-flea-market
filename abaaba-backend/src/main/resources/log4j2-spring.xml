@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <properties>
+        <property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} |-%-5level [%thread] %c [%L] -| %msg%n</property>
+    </properties>
+
+    <appenders>
+        <Console name="CONSOLE" target="system_out">
+            <PatternLayout pattern="${PATTERN}"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="logs/app.log"
+                     filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="5 MB"/>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <logger name="best.nyan.abaaba.abaababackend" level="debug"/>
+        <root level="info">
+            <appenderref ref="CONSOLE"/>
+            <appender-ref ref="RollingFile"/>
+        </root>
+    </loggers>
+
+</configuration>
