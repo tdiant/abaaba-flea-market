@@ -296,7 +296,7 @@
 
 <script>
 export default {
-  name: "HomeRecommendItem",
+  name: "RecommendItem",
   props: {
     displayToRight: {
       type: Boolean,

@@ -23,6 +23,7 @@
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  z-index: 1919810;
 
   #nav {
     width: 100%;

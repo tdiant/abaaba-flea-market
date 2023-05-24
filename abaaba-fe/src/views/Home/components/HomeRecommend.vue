@@ -5,49 +5,49 @@
     </div>
     <div class="recommend-list">
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="true"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="true"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="false"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="false"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="true"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="true"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="false"/>
       </div>
       <div class="recommend-item">
-        <home-recommend-item
+        <recommend-item
           class="inner-item"
           style="width: 280px;height:300px;"
           :display-to-right="false"/>
@@ -81,10 +81,10 @@
 </style>
 
 <script>
-import HomeRecommendItem from "@/views/Home/components/HomeRecommendItem.vue";
+import RecommendItem from "@/components/RecommendItem.vue";
 
 export default {
   name: "HomeRecommend",
-  components: {HomeRecommendItem}
+  components: {RecommendItem}
 }
 </script>

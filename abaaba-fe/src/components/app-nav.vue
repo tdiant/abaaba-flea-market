@@ -29,6 +29,7 @@
 <style lang="scss" scoped>
 .app-nav-main {
   width: 100%;
+  z-index: 1919810;
 }
 
 .logo {
