@@ -19,9 +19,8 @@
         <i class="user-icon fa fa-user-circle-o"/>
         Username
       </template>
-      <el-menu-item index="2-1">用户资料</el-menu-item>
-      <el-menu-item index="2-2">用户设置</el-menu-item>
-      <el-menu-item index="2-3">退出登录</el-menu-item>
+      <el-menu-item index="/user/profile">用户资料</el-menu-item>
+      <el-menu-item index="/user/quit">退出登录</el-menu-item>
     </el-sub-menu>
   </el-menu>
 </template>
@@ -86,6 +85,9 @@ export default {
     nowActive() {
       let result = this.navTabs[0]
       let routePath = this.$route.path
+
+      if (routePath.startsWith("/user"))
+        return {index: 0, name: "User", path: "/user", icon: ""}
 
       for (let i = 0; i < this.navTabs.length; i++) {
         let u = this.navTabs[i]

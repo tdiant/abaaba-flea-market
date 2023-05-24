@@ -77,16 +77,17 @@
       text-align: center;
       margin: 0;
       padding: 8px 0 16px 0;
-      color: #555555;
+      color: #232323;
       font-size: 0.96rem;
+      font-weight: bold;
     }
 
     .el-menu {
       border-right: none;
 
       .el-menu-item {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
       }
     }
   }

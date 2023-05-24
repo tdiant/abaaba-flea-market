@@ -13,11 +13,17 @@ public class User {
     private Long id;
 
     private boolean available;
-    private boolean op;
+    private boolean operator;
 
     private String username;
 
     @JsonIgnore
     private String password;
+
+    private String realName;
+    private Integer grade;
+    private String department;
+    private String phoneNumber;
+    private String address;
 
 }
