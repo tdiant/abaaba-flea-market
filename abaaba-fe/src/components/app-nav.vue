@@ -76,9 +76,9 @@ export default {
         {index: 0, name: '首页', path: '/', icon: 'home'},
         {index: 1, name: '物品合集', path: '/items', icon: 'archive'},
         {index: 2, name: '购物车', path: '/cart', icon: 'shopping-cart'},
-        {index: 3, name: '记录', path: '/record', icon: 'book'},
-        {index: 3, name: '我的商品', path: '/my-own', icon: 'bullseye'},
-        {index: 3, name: '帮助&关于', path: '/about', icon: 'question-circle'},
+        {index: 3, name: '购买记录', path: '/orders', icon: 'book'},
+        {index: 3, name: '我的商品', path: '/own', icon: 'bullseye'},
+        {index: 3, name: '关于', path: '/about', icon: 'question-circle'},
       ]
     }
   },
